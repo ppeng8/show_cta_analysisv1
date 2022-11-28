@@ -15,3 +15,5 @@ streamlit-player
 streamlit-echarts
 pyecharts
 openpyxl
+pickle
+plotly
