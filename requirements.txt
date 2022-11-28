@@ -14,3 +14,4 @@ Pillow
 streamlit-player
 streamlit-echarts
 pyecharts
+openpyxl
