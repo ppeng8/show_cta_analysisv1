@@ -6,4 +6,3 @@ plotly
 scipy
 pyecharts
 openpyxl
-pickle
