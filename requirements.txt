@@ -6,3 +6,5 @@ plotly
 scipy
 pyecharts
 openpyxl
+seaborn
+matplotlib
