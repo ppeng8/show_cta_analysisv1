@@ -155,7 +155,7 @@ df_qujian = get_qujian()
 
 
 add_sidebar = st.sidebar.selectbox('分析视角', ['统计检验-bootstrap_ttest','整体_按照因子分类','单因子分析','单场景分析-策略对比'
-                                            ,'单场景分析-因子对比']) #,'整体_按照场景分类'
+                                            ]) #,'单场景分析-因子对比','整体_按照场景分类'
 ###########################################
 if add_sidebar == '统计检验-bootstrap_ttest':
     st.title('CTA策略情景分析')
@@ -713,6 +713,7 @@ if add_sidebar == '单场景分析-策略对比':
     
     
 ######################################
+'''
 if add_sidebar == '单场景分析-因子对比':
     st.write("单场景分析-因子对比")
     st.text('所有策略在特定因子下行（上行）时，哪个策略表现最好')
@@ -736,7 +737,7 @@ if add_sidebar == '单场景分析-因子对比':
          # facet_row="因子"
         )
     st.plotly_chart(fig)
-
+'''
     
 # if add_sidebar == '整体_按照场景分类':
     
