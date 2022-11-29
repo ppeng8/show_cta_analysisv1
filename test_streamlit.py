@@ -713,31 +713,31 @@ if add_sidebar == '单场景分析-策略对比':
     
     
 ######################################
-'''
-if add_sidebar == '单场景分析-因子对比':
-    st.write("单场景分析-因子对比")
-    st.text('所有策略在特定因子下行（上行）时，哪个策略表现最好')
-    changjing1 = list(set(df_process['场景']))
-    changjing_select1 = st.selectbox('Pick a Video:', changjing1)
-    df_filtered = df_process[df_process['场景'] == changjing_select1]
+
+#if add_sidebar == '单场景分析-因子对比':
+#    st.write("单场景分析-因子对比")
+#    st.text('所有策略在特定因子下行（上行）时，哪个策略表现最好')
+#     changjing1 = list(set(df_process['场景']))
+#     changjing_select1 = st.selectbox('Pick a Video:', changjing1)
+#     df_filtered = df_process[df_process['场景'] == changjing_select1]
     
-    fig = px.bar(df_filtered[df_filtered['因子'].isin(['信用','利率','增长','海外','美元','通胀'])],
-          x="因子",
-          y="sharp_ratio",
-          color="策略",
-          barmode="group"  # ['stack', 'group', 'overlay', 'relative']
-        )
-    st.plotly_chart(fig)
+#     fig = px.bar(df_filtered[df_filtered['因子'].isin(['信用','利率','增长','海外','美元','通胀'])],
+ #          x="因子",
+ #          y="sharp_ratio",
+   #        color="策略",
+     #      barmode="group"  # ['stack', 'group', 'overlay', 'relative']
+     #    )
+#     st.plotly_chart(fig)
     
-    fig = px.bar(df_filtered[df_filtered['因子'].isin(['PPI预期差', '情绪','大宗利润', '历史波动', '股债波动'])],
-         x="因子",
-         y="sharp_ratio",
-         color="策略",
-         barmode="group" # ['stack', 'group', 'overlay', 'relative']
-         # facet_row="因子"
-        )
-    st.plotly_chart(fig)
-'''
+ #    fig = px.bar(df_filtered[df_filtered['因子'].isin(['PPI预期差', '情绪','大宗利润', '历史波动', '股债波动'])],
+  #        x="因子",
+  #        y="sharp_ratio",
+ #         color="策略",
+  #        barmode="group" # ['stack', 'group', 'overlay', 'relative']
+   #       # facet_row="因子"
+    #     )
+    # st.plotly_chart(fig)
+
     
 # if add_sidebar == '整体_按照场景分类':
     
